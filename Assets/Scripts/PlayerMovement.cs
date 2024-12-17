@@ -9,12 +9,16 @@ public class PlayerMovement : MonoBehaviour
     public float verticalInput;
     public float speed = 10.0f;
     public float xRange = 10.0f;
-   
+
+    private PlayerMovement playerMovementScript;
+
+    public bool gameOver;
+    public bool isOnground = true;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        playerMovementScript = GameObject.Find("Player").GetComponent<PlayerMovement>();
     }
 
     // Update is called once per frame
@@ -49,4 +53,17 @@ public class PlayerMovement : MonoBehaviour
         transform.Translate(Vector3.up * verticalInput * Time.deltaTime * speed);
 
     }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            isOnground = true;
+        }
+        else if (collision.gameObject.CompareTag("Obstacle"))
+        {
+            gameOver = true;
+            Debug.Log("Game Over!");
+        }
+    }
+
 }
