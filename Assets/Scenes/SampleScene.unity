@@ -149,7 +149,7 @@ RectTransform:
   m_GameObject: {fileID: 45680495}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2939838, y: 1.2939838, z: 1.2939838}
+  m_LocalScale: {x: 1.5341473, y: 1.5341473, z: 1.5341473}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1548225450}
@@ -526,7 +526,6 @@ GameObject:
   - component: {fileID: 1079248013}
   - component: {fileID: 1079248014}
   - component: {fileID: 1079248015}
-  - component: {fileID: 1079248016}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -548,7 +547,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 32
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!23 &1079248010
 MeshRenderer:
@@ -608,7 +607,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1079248006}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.09, y: 0, z: 202}
+  m_LocalPosition: {x: -6.09, y: -4.9, z: 201.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -658,23 +657,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ab3042eb478303428faf1a83f500ce6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1079248016
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1079248006}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 704ac467396e94245aa4941ec1b02585, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  score: 0
-  isAlive: 1
-  scoreIncreaseInterval: 1
-  scoreText: {fileID: 0}
-  timer: 0
 --- !u!1 &1222957214
 GameObject:
   m_ObjectHideFlags: 0
@@ -700,7 +682,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1222957214}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 33.28, y: -2.33, z: 202}
+  m_LocalPosition: {x: 30.2, y: 1.2, z: 199}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -719,7 +701,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 090d5ac5420f5c0459dbcdf91db05cfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstaclePrefab: {fileID: 8967019775243270409, guid: a3e80a3c259b3bb46948188d56a8c235, type: 3}
+  obstaclePrefab: {fileID: 4047299258378109183, guid: 2fd2427d2b81ea64ea676bd69b4f8fa1, type: 3}
 --- !u!1 &1438105186
 GameObject:
   m_ObjectHideFlags: 0
