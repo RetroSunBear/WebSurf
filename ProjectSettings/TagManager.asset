@@ -7,6 +7,9 @@ TagManager:
   - Background
   - Floor
   - Enemy
+  - Ground
+  - Obstacle
+  - Score
   layers:
   - Default
   - TransparentFX
