@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public float verticalInput;
     public float speed = 10.0f;
     public float xRange = 10.0f;
+    private Rigidbody playerRb;
 
     private PlayerMovement playerMovementScript;
 
